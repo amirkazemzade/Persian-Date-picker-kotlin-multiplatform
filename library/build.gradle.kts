@@ -92,6 +92,7 @@ tasks.named("publishKotlinMultiplatformPublicationToMavenLocal") {
 
 }
 signing {
+    isRequired = false
     useInMemoryPgpKeys(
         System.getenv("MAVEN_KEY_ID"),
         System.getenv("MAVEN_SECRET_KEY"),
